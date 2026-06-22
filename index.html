@@ -2,8 +2,21 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Hello HTML!</title>
+    <link rel="icon" href="html5_logo.svg">
+    <style>
+        h2, h4, h6
+        {
+            text-align: center;
+            color: red;
+            font-family: Arial;
+        }
+        h4
+        {
+            color: darkgreen;
+        }
+    </style>
 </head>
 <body>
     <details>
@@ -18,11 +31,26 @@
     </details>
     <details open>
         <summary>Дескрипторы</summary>
-        <b><tt>&#60;p&#62;</tt> (Paragraph)</b> &ndash; этот дескриптор описывает абзац;<br />
-        <b><tt>&lt;b&gt;</tt> (Bold)</b> &ndash; <b>делает шрифт полужирным</b>;<br />
-        <b><tt>&lt;i&gt;</tt> (Italic)</b> &ndash; <i>делает шрифт наклонным</i>;<br />
-        <b><tt>&lt;i&gt;</tt> (Underline)</b> &ndash; <u>делает шрифт подчеркнутым</u>;<br />
-        <b><tt>&lt;tt&gt;</tt> (Teletype)</b> &ndash; <tt>делает шрифт моноширинным</tt>;<br />
+        <h2>Дескрипторы физического форматирования</h2>
+        <b><tt>&#60;p&#62;</tt> (Paragraph)</b> &ndash; этот дескриптор описывает абзац;<br>
+        <b><tt>&lt;b&gt;</tt> (Bold)</b> &ndash; <b>делает шрифт полужирным</b>;<br>
+        <b><tt>&lt;i&gt;</tt> (Italic)</b> &ndash; <i>делает шрифт наклонным</i>;<br>
+        <b><tt>&lt;i&gt;</tt> (Underline)</b> &ndash; <u>делает шрифт подчеркнутым</u>;<br>
+        <b><tt>&lt;tt&gt;</tt> (Teletype)</b> &ndash; <tt>делает шрифт моноширинным</tt>;<br>
+        <b><tt>&lt;sup&gt;</tt> (Superscript)</b> &ndash; Верхний <sup>индекс</sup>;<br>
+        <b><tt>&lt;sub&gt;</tt> (Subscript)</b> &ndash; Нижний <sub>индекс</sub>;<br>
+        <b><tt>&lt;pre&gt;</tt> (Preformatted)</b> &ndash; <pre>создает форматированный текст,
+в котором сохраняются отступы, переносы строк и пробелы.
+Кроме того, форматированный текст всегда отображается моноширинным шрифтом</pre>;<br>
+        <hr>
+        <h2>Дескрипторы логического форматирования</h2>
+        <strong><code>&lt;strong&gt;</code> (Bold)</strong> &ndash; <strong>делает шрифт полужирным</strong>;<br>
+        <strong><code>&lt;em&gt;</code> (Emphasize)</strong> &ndash; <em>делает шрифт наклонным</em>;<br>
+        <strong><code>&lt;code&gt;</code> (Mono)</strong> &ndash; <code>делает шрифт моноширинным</code>;<br>
+        <strong><code>&lt;abbr&gt;</code> (Abbreviation)</strong> &ndash; <abbr>этим дескриптором желательно выделять аббревиатуры</abbr>;<br>
+        <strong><code>&lt;cite&gt;</code> (Citation)</strong> &ndash; <cite>этим дескриптором желательно выделять цитаты</cite>;<br>
     </details>
+    <hr>
+    <h2>CSS</h2>
 </body>
 </html>
