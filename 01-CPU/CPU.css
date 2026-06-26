@@ -13,3 +13,7 @@ figure {
     text-align: center;
     font-style: italic;
 }
+
+ul {
+    list-style: none;
+}
