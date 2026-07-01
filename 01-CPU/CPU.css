@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto Condensed';
     font-size: 14pt;
     padding: 1% 5%;
-    background-image: url(img/pcb.jpg);
+    /*background-image: url(img/pcb.jpg);*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,4 +52,10 @@ h2:target > span {
 
 div {
     padding: 16px;
+}
+
+.cite {
+    border: solid 5px;
+    margin: 20px 50px;
+    padding: 30px;
 }
