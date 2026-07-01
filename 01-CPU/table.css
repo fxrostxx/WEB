@@ -1,0 +1,39 @@
+﻿table {
+    border: solid 2px;
+    border-collapse: collapse;
+    margin: 15px auto;
+}
+
+thead {
+    border: solid 2px;
+}
+
+    thead th {
+        padding: 10px;
+        background-color: aquamarine;
+    }
+
+th, td {
+    border: solid 1px;
+    padding: 5px;
+}
+
+tbody th {
+    text-align: left;
+}
+
+td {
+    text-align: center;
+}
+
+tr:hover {
+    box-shadow: inset 0 0px 10px 2px gray;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+caption {
+    text-align: left;
+}
