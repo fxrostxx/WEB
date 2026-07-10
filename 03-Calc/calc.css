@@ -106,3 +106,15 @@ body {
     display: flex;
     align-items: center;
 }
+
+/* ------------------------------------------------------ */
+
+.client-rect {
+    width: 100%;
+    height: 268px;
+    background-color: rgb(235, 233, 216);
+    border: solid 1px;
+    border-color: blue;
+    border-image: linear-gradient(to right, darkblue, lightblue, darkblue);
+    box-shadow: 0px 0px 1px 1px darkblue;
+}
