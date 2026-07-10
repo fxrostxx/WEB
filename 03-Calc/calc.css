@@ -49,9 +49,8 @@ body {
     width: 24px;
     height: 24px;
     font-weight: 800;
-    font-size: 12pt;
     padding: 0px 1px 8px 1px;
-    line-height: 21px;
+    margin: 0px 1px;
     border: solid 1px white;
     border-radius: 4px;
     color: white;
@@ -59,11 +58,51 @@ body {
     box-shadow: inset -1px -2px 4px 0px #000088, inset 4px 2px 4px 0px #7788FF;
 }
 
+    .control-button[disabled] {
+        color: #BBBBBB;
+        border-color: #BBBBBB;
+    }
+
+    .control-button:hover {
+        background-image: linear-gradient(to bottom right, rgb(149, 149, 249), rgb(45, 109, 249), rgb(149, 149, 249));
+    }
+
+    .control-button:active {
+        background-image: none;
+        background-color: rgb(85, 85, 192);
+        box-shadow: inset 1px 2px 4px 0px #000088, inset -4px -2px 4px 0px #7788FF;
+    }
+
+    .control-button[disabled], .control-button[disabled]:hover, .control-button[disabled]:active {
+        color: #CCCCCC;
+        border-color: #CCCCCC;
+        background-image: none;
+        background-color: rgb(45, 109, 249);
+        box-shadow: inset -1px -2px 4px 0px #000088, inset 4px 2px 4px 0px #7788FF;
+    }
+
+.control-button-label {
+    font-size: 14pt;
+    margin: -4px 0px 0px 0px;
+    font-family: 'Courier New';
+}
+
 .close-button {
     background-color: rgb(221, 85, 26);
     box-shadow: inset -1px -2px 4px 0px #880000, inset 4px 2px 4px 0px #FF8888;
 }
 
+    .close-button:hover {
+        background-image: linear-gradient(to bottom right, rgb(249, 149, 149), rgb(249, 85, 26), rgb(249, 128, 85));
+    }
+
+    .close-button:active {
+        background-image: linear-gradient(to bottom right, rgb(224, 49, 49), rgb(224, 85, 26), rgb(224, 64, 85));
+        box-shadow: inset 4px 2px 4px 0px #880000, inset -2px -1px 4px 0px #FF8888;
+    }
+
 .title-bar-left-side, .title-bar-right-side {
-    margin: 0px 4px;
+    margin: 0px 8px;
+    display: flex;
+    align-items: center;
 }
