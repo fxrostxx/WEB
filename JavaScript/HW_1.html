@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Factorial, pow, fibonacci</title>
+</head>
+<body>
+    <h1>Factorial, pow, fibonacci</h1>
+    <script>
+        function factorial(num) {
+            if (num < 0) return undefined;
+            if (num == 0 || num == 1) return 1;
+            let result = 1;
+            for (let i = 2; i <= num; ++i) result *= i;
+            return result;
+        }
+        function pow(x, a) {
+            if (a == 0) return 1;
+            if (a == 1) return x;
+            if (a < 0) {
+                if (x == 0) return undefined;
+                let positiveResult = 1;
+                for (let i = 0; i < -a; ++i) positiveResult *= x;
+                return 1 / positiveResult;
+            }
+            let result = 1;
+            for (let i = 0; i < a; ++i) result *= x;
+            return result;
+        }
+        function fibonacci(num) {
+            if (num == 0) {
+                document.writeln(num);
+                return;
+            }
+            let fib1 = 0;
+            let fib2 = 1;
+            while (fib1 <= num) {
+                document.writeln(`${fib1} `);
+                let next = fib1 + fib2;
+                fib1 = fib2;
+                fib2 = next;
+            }
+            document.writeln();
+        }
+        let fact = prompt('Введите число, для которого вычислить факториал');
+        document.writeln(`${fact}! = ${factorial(fact)}`);
+        document.writeln('<hr />');
+        let x = prompt('Введите основание степени');
+        let a = prompt('Введите показатель степени');
+        document.writeln(`${x}<sup>${a}</sup> = ${pow(x, a)}`);
+        document.writeln('<hr />');
+        let fib = prompt('Введите число, до которого вывести ряд Фибоначчи');
+        fibonacci(fib);
+    </script>
+</body>
+</html>
