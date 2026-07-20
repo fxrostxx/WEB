@@ -1,0 +1,19 @@
+﻿input, button {
+    font-family: 'Roboto Condensed';
+    font-size: 16pt;
+    margin: 5px;
+}
+
+.task {
+    display: flex;
+    width: 80%;
+}
+
+.result {
+    width: 50%;
+    padding-left: 10px;
+}
+
+#factorial-result {
+    overflow: scroll;
+}
