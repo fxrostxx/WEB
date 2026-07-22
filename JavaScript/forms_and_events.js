@@ -14,9 +14,13 @@ function SetImage() {
     }
     reader.readAsDataURL(filename.files[0]);
 }
-function SetBackgroundColor(event) {
-    document.body.style.backgroundColor = event.target.value;
-}
-function SetForegroundColor() {
-    document.body.style.color = document.getElementById("foreground-color").value;
+//function SetBackgroundColor(event) {
+//    document.body.style.backgroundColor = event.target.value;
+//}
+//function SetForegroundColor() {
+//    document.body.style.color = document.getElementById("foreground-color").value;
+//}
+function SetColor(event) {
+    if (event.target.id === "background-color") document.body.style.backgroundColor = event.target.value;
+    else document.body.style.color = event.target.value;
 }
