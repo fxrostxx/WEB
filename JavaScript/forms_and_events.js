@@ -6,3 +6,17 @@ function Factorial() {
     let resultElement = document.getElementById("factorial-result");
     resultElement.innerHTML = `${number}! = ${result}`;
 }
+function SetImage() {
+    let filename = document.getElementById("image-file");
+    let reader = new FileReader();
+    reader.onload = function (e) {
+        document.getElementById("image").src = e.target.result;
+    }
+    reader.readAsDataURL(filename.files[0]);
+}
+function SetBackgroundColor() {
+    document.body.style.backgroundColor = document.getElementById("background-color").value;
+}
+function SetForegroundColor() {
+    document.body.style.color = document.getElementById("foreground-color").value;
+}

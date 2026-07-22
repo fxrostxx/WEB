@@ -5,25 +5,49 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="forms_and_events.css" />
+    <style>
+        body {
+            background-image: none;
+        }
+    </style>
     <title>Forms and events</title>
 </head>
 <body>
     <h1>Forms and events</h1>
-    <h2>Factorial</h2>
-    <div class="task">
-        <div class="pair">
-            <label for="number">Enter an integer:</label>
-            <input id="number" type="number" min="0" max="999" onchange="Factorial()" />
+    <details>
+        <summary>Simple tasks</summary>
+        <h2>Factorial</h2>
+        <div class="task">
+            <div class="pair">
+                <label for="number">Enter an integer:</label>
+                <input id="number" type="number" min="0" max="999" onchange="Factorial()" />
+            </div>
+            <button onclick="Factorial()">Calculate</button>
         </div>
-        <button onclick="Factorial()">Calculate</button>
-    </div>
-    <div id="factorial-result" class="result"></div>
-    <hr />
-    <div class="task"></div>
-    <script src="forms_and_events.js"></script>
-    <h2>Power</h2>
-    <div class="task">
-
+        <div id="factorial-result" class="result"></div>
+        <hr />
+        <div class="task"></div>
+        <script src="forms_and_events.js"></script>
+        <h2>Power</h2>
+        <div class="task"></div>
+    </details>
+    <div class="image-and-colors">
+        <div class="upload-image">
+            <div class="image-container">
+                <img alt="Image" id="image" />
+            </div>
+            <input type="file" id="image-file" onchange="SetImage()" />
+        </div>
+        <div class="select-colors">
+            <div class="select-color">
+                <label for="background-color">Background color</label>
+                <input type="color" id="background-color" value="white" oninput="SetBackgroundColor()" />
+            </div>
+            <div class="select-color">
+                <label for="foreground-color">Foreground color</label>
+                <input type="color" id="foreground-color" oninput="SetForegroundColor()" />
+            </div>
+        </div>
     </div>
     <script src="forms_and_events.js"></script>
 </body>

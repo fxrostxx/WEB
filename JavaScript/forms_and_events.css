@@ -17,3 +17,24 @@
 #factorial-result {
     overflow: scroll;
 }
+
+.image-and-colors {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.image-container {
+    border: solid 1px;
+}
+
+#image, .image-container {
+    width: 400px;
+    height: 300px;
+}
+
+.select-color {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
